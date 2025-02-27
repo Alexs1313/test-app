@@ -1,7 +1,7 @@
 import { Button, StyleSheet, Text, View } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import DefaultHome from "../nestedScreens/DefaultHome";
-import MapScreen from "../nestedScreens/MapScreen";
+import DetailsScreen from "../nestedScreens/DetailsScreen";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,11 @@ export const HomeScreen = () => {
         name="DefaultHome"
         component={DefaultHome}
       />
-      <Stack.Screen name="MapScreen" component={MapScreen} />
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="Details"
+        component={DetailsScreen}
+      />
     </Stack.Navigator>
   );
 };

@@ -15,6 +15,7 @@ export const Navigation = () => {
     <Tab.Navigator>
       <Tab.Screen
         options={{
+          headerShown: false,
           tabBarIcon: ({ size, color }) => (
             <FontAwesome5 name="user" size={size} color={color} />
           ),
